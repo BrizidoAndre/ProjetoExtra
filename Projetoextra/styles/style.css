@@ -1,0 +1,755 @@
+/* IMPORTANDO AS FONTES EXTERNAS */
+@font-face {
+    font-family: Poppins;
+    src: url(../assets/fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: Sanspro;
+    src: url(../assets/fonts/SourceSansPro-Black.ttf);
+}
+
+/* CLASSES GERAIS */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {}
+
+.layout-grid {
+    width: 90%;
+
+    max-width: 1200px;
+    min-width: 992px;
+}
+
+.Poppins{
+    font-family: Poppins;
+}
+
+.SansPro {
+    font-family: SansPro;
+}
+
+.borda {
+    border: 2px solid red;
+}
+
+.shadow{
+    box-shadow: 0px 0px 40px #aaaaaa;
+
+    background-color: white;
+}
+.efeitoMouse:hover{
+    border-bottom: 2px solid #c46bd6;
+}
+
+/* FIM DAS CLASSES GERAIS */
+.banner {
+    height: 650px;
+    background-image: linear-gradient(to right top, #c46bd6, #3927b2);
+
+
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+
+    margin-top: 20px;
+}
+
+header h1 {
+    font-family: sanspro;
+    text-transform: uppercase;
+    color: white;
+    font-size: 36px;
+
+}
+
+#search {
+    width: 400px;
+    height: 40px;
+
+
+    border-radius: 4px;
+    border: 1px solid white;
+}
+
+nav a {
+    text-decoration: none;
+    font-family: Poppins;
+
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+
+    margin-right: 20px;
+}
+
+#contatos {
+    display: flex;
+    gap: 10px;
+}
+
+.circulo {
+    border-radius: 50px;
+    border: 1px solid white;
+
+    width: 40px;
+    height: 40px;
+    padding-top: 4px;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconecirculo {
+    width: 20px;
+    height: 20px;
+}
+
+.BannerConteudo {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.circuloslider {
+    position: absolute;
+    bottom: 350px;
+    left: -40px;
+
+    width: 40px;
+    height: 40px;
+
+    z-index: 3;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circuloslider img {
+    rotate: 90deg;
+    width: 20px;
+}
+
+.mirror {
+    position: absolute;
+    bottom: 350px;
+    right: -40px;
+
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mirror img {
+    rotate: -90deg;
+
+    width: 20px;
+}
+
+#imglaptop {
+    width: 900px;
+    position: relative;
+    left: -58px;
+    bottom: -70px;
+}
+
+.BannerText {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    position: relative;
+    left: -180px;
+    top: 200px;
+
+    height: 250px;
+    width: 300px;
+
+}
+
+.BannerText h3,
+.BannerText h1 {
+    color: white;
+}
+
+.BannerText h3 {
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.BannerText h1 {
+    font-size: 56px;
+    margin-top: 10px;
+    width: 400px;
+}
+
+.BotaoComprar {
+    background-color: #ffc302;
+
+    border: 0px;
+    border-radius: 20px;
+
+    height: 40px;
+    width: 150px;
+}
+
+.BotaoComprar h3 {
+    font-size: 12px;
+}
+
+.info {
+    height: 300px;
+    background-color: #dfb7e5;
+
+    display: flex;
+    justify-content: center;
+
+    position: relative;
+    z-index: 5;
+}
+
+.info .layout-grid{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 100%;
+}
+
+.infoblock{
+    display: flex;
+    justify-content: space-between;
+
+    gap: 15px;
+
+    width: 250px;
+}
+.infoblock img{
+    height: 40px;
+}
+
+.infoblock h2, .infoblock p{
+    color: black;
+}
+
+.infoblock h2{
+    font-size: 26px;
+    
+    font-weight: bold;
+}
+
+.infoblock p{
+    margin-top: 5px;
+
+    font-weight: 200;
+}
+
+.pricetable{
+    height: 800px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.textbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 20px;
+}
+
+.textbox h3{
+    text-align: center;
+    font-size: 16px;
+    text-transform: uppercase;
+
+    margin-top: 60px;
+}
+.textbox h1{
+    text-align: center;
+    font-size: 36px;
+    text-transform: uppercase;
+}
+
+.textbox p{
+    text-align: center;
+    font-size: 14px;
+
+    width: 650px;
+
+    font-weight: 50;
+    color: rgba(209,209,209,255);
+}
+.productdescription{
+    display: flex;
+    justify-content: space-evenly;
+
+    margin-top: 80px;
+}
+.product{
+    width: 200px;
+}
+.product img {
+    width: 200px;
+    height: 150px;
+    margin-bottom: 40px;
+}
+
+.product p , .product a{
+    margin-top: 10px;
+
+    text-decoration-line: none;
+}
+
+.product .Poppins{
+    text-align: center;
+    color: rgba(150,150,150,255);
+}
+
+.product a .SansPro{
+    text-align: center;
+    color: black;
+}
+.product a :hover{
+    color: #c46bd6;
+}
+.mostra{
+    background-color: rgba(253,242,255,255);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    height: 650px;
+}
+
+.mostra h3{
+    text-transform: uppercase;
+    margin-top: 35px;
+    font-size: 16px;
+
+}
+
+.mostra h1{
+    font-size: 48px;
+    margin-top: 15px;
+}
+
+.promotionzone{
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 40px;
+    gap: 20px;
+}
+
+.cellinfo{
+    width: 300px;
+    height: 400px;
+
+    padding: 25px 20px;
+
+    overflow: hidden;
+
+    position: relative;
+}
+
+.cellinfo button, .tabletinfo button{
+    font-family: SansPro;
+    color: #a976af;
+
+    background-color: transparent;
+    border: 2px solid #c19ac6;
+
+    margin-top: 20px;
+}
+
+.cellinfo img{
+    width: 400px;
+
+    position: relative;
+    bottom: -50px;
+    left: -150px;
+}
+
+.productsell{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.productselling{
+    width: 300px;
+    height: 175px;
+
+    padding: 25px 20px;
+
+    overflow: hidden;
+
+    position: relative;
+}
+#celDiagonal{
+    width: 300px;
+    position: relative;
+    right: -35px;
+    bottom: 60px;
+    transform: scaleX(-1);
+
+}
+#smart{
+    width: 200px;
+    position: relative;
+
+    right: -60px;
+    bottom: 80px;
+}
+
+.tabletinfo{
+    width: 620px;
+    height: 195px;
+
+    padding: 25px 20px;
+
+    overflow: hidden;
+
+    margin-top: 30px;
+
+    position: relative;
+}
+
+#buttontablet{
+
+    position: relative;
+
+    bottom: 170px;
+}
+
+#tablet{
+    position: relative;
+    top: -60px;
+    right: -100px;
+
+    width: 300px;
+
+    transform: scaleX(-1);
+}
+
+.carShop{
+    height: 680px;
+
+    display: flex;
+    justify-content: center;
+
+}
+.carHeader{
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 70px;
+}
+.carHeader h1{
+    font-size: 48px;
+}
+
+.carNav{
+    gap: 40px;
+    display: flex;
+    align-items: end;
+}
+
+.carNav a{
+    color: black;
+    text-decoration: none;
+}
+
+.carNav a:hover{
+    border-bottom: 2px solid #c46bd6;
+}
+
+.carProducts{
+    margin-top: 50px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.carProduct{
+    width: 250px;
+    height: 400px;
+
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.carProduct img{
+    width: 200px;
+}
+
+.carProduct h2{
+    font-size: 28px;
+}
+
+.carPrice{
+    display: flex;
+    justify-content: space-between;
+
+    width: auto;
+
+    margin-top: 20px;
+}
+
+.carPrice div {
+    border: 2px solid #c46bd6;
+    border-radius: 40px;
+
+    height: 40px;
+    width: 40px;
+
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.carPrice div img{
+
+    height: 30px;
+    width: 30px;
+    transform: scalex(-1);
+}
+
+.divslider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 20px 0px;
+
+    gap: 20px;
+}
+
+.divslider div{
+    border: 2px solid #b824b4;
+    border-radius: 40px;
+
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divslider div img{
+    width: 20px;
+    height: 20px;
+
+    rotate: 90deg;
+}
+
+.divslider #mirror{
+    rotate: 180deg;
+}
+
+.shopPromotion{
+    height: 680px;
+
+    display: flex;
+    justify-content: center;
+
+    background-color: #fdf2ff;
+}
+
+.promoHeader{
+    margin: 40px 0px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.promoHeader h1{
+    font-size: 54px;
+}
+
+.promoHeader h2{
+    font-size: 48px;
+}
+
+.promoBody{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.promoInfo{
+    width: 250px;
+    height: 400px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    padding: 40px;
+}
+
+.promoInfo h2{
+    font-size: 30px;
+}
+
+.promoInfo div{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.promoInfo div a{
+    text-decoration: none;
+    color: black;
+    width: min-content;
+}
+
+
+
+.promoProduct{
+    background-image: url("../assets/images/Products/pngwing.com.png");
+    width: 500px;
+    height: 500px;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    transform: scaleX(-1);
+
+    display: flex;
+    justify-content: start;
+}
+.promoDiscount{
+    width: 80px;
+    height: 80px;
+
+    border-radius: 40px;
+    background-color: #c96bda;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transform: scaleX(-1);
+
+    color: white;
+    font-size: 24px;
+}
+
+.promoTime{
+    width: 300px;
+    height: 400px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.prices{
+    display: flex;
+    align-items: end;
+    gap: 20px;
+}
+
+.promoTime h2{
+    font-size: 30px;
+}
+
+#price{
+    font-size: 16px;
+    color: #aaaaaa;
+    text-decoration: line-through red;
+}
+
+.promoTime p{
+    color: #aaaaaa;
+}
+
+.promoQuantity{
+    display: flex;
+    justify-content: space-between;
+}
+
+.promoQuantity p{
+    color: black;
+}
+
+.fullBar{
+    border-radius: 3px;
+    background-color: #dadada;
+}
+
+.promoBar hr{
+    border-radius: 3px;
+    border: 8px solid #c96bda;
+
+    width: 40%;
+
+    margin-top: 5px;
+}
+
+.promoTime button{
+    height: 40px;
+    width: 150px;
+    background-color: #c96bda;
+    color: white;
+    border: none;
+    border-radius: 20px;
+}
+
+.newsBox{
+    height: 680px;
+
+    display: flex;
+    justify-content: center;
+
+    padding: 40px;
+}
+
+.newsHeader{
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+.newsHeader h3{
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.newsHeader h1{
+    font-size: 54px;
+}
+
+.news{
+    
+}
