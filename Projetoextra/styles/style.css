@@ -93,6 +93,12 @@ nav a {
     font-weight: bold;
 
     margin-right: 20px;
+    
+
+}
+
+nav a:hover{
+    border-bottom: 2px solid white;
 }
 
 #contatos {
@@ -112,6 +118,9 @@ nav a {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.circulo:hover{
+    background-color: white;
 }
 
 .iconecirculo {
@@ -734,6 +743,10 @@ nav a {
     padding: 40px;
 }
 
+.newsBox .layout-grid{
+    position: relative;
+}
+
 .newsHeader{
     display: flex;
     flex-direction: column;
@@ -751,5 +764,157 @@ nav a {
 }
 
 .news{
-    
+    margin: 30px 0px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.letter{
+    width: 360px;
+    height: 400px;
+}
+
+.letter img{
+    width: 360px;
+}
+
+.letterText{
+    padding: 20px 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.letter h2{
+    font-size: 28px;
+}
+.letter h4{
+    font-size: 12px;
+}
+
+.subscribe{
+    height: 340px;
+    background-color: #3023ae;
+
+    display: flex;
+    justify-content: center;
+
+    padding: 80px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    color: white;
+}
+
+.subscribe .layout-grid{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.subscribeText{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    width: 500px;
+}
+
+.subscribeText h3{
+    text-transform: uppercase;
+}
+
+.subscribeText h1{
+    font-size: 54px;
+}
+
+.subscribeInput{
+    display: flex;
+
+    gap: 20px;
+
+}
+
+#input{
+    width: 300px;
+
+    padding-left: 20px;
+
+    z-index: 3;
+
+    border-radius: 10px;
+    border: none;
+}
+
+.subscribeInput button{
+    color: white;
+    z-index: 3;
+}
+.circuloRoxo{
+    background-image: linear-gradient(to right top, #ac5ecd, #3023ae);
+    border-radius: 1000000px;
+}
+#roxo1{
+    width: 90px;
+    height: 90px;
+
+    position: absolute;
+    bottom: -45px;
+    left: -45px;
+}
+#roxo2{
+    width: 400px;
+    height: 400px;
+
+    position: absolute;
+    bottom: -200px;
+    right: 200px;
+}
+#roxo3{
+    width: 90px;
+    height: 90px;
+
+    position: absolute;
+    bottom: -105px;
+    right: 300px;
+    z-index: 1;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    height: 280px;
+
+    padding: 70px 0px;
+
+}
+
+.footer .layout-grid{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerText{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+
+    width: 250px;
+
+    gap: 20px;
+}
+
+.footerText a{
+    color: #aaaaaa;
+
+    font-size: 12px;
+    text-decoration: none;
+}
+.footerText a:first-child{
+    color: black;
 }
